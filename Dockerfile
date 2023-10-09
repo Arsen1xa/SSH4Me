@@ -1,9 +1,8 @@
 # You can change the base image to any other image you want.
 FROM catub/core:bullseye
 
-ARG AUTH_TOKEN=2WXAj2HwKnErINNxvImrDrrKgsr_26YLaPrMx9Qfvgd3QRqy4
+ARG AUTH_TOKEN=2WXEJ1Xz4JV4NJO7t4YrSY7fXj8_7USCKpLw5eRu7UBdE5vXB
 ARG PASSWORD=rootuser
-ngrok config add-authtoken 2WXAj2HwKnErINNxvImrDrrKgsr_26YLaPrMx9Qfvgd3QRqy4
 # Install packages and set locale
 RUN apt-get update \
     && apt-get install -y locales nano ssh sudo python3 curl wget \
